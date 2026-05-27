@@ -154,9 +154,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      本次作業是接觸文生圖的初步應用，使用的是目前提供個人使用功能最齊全的文生圖工具ComfyUI，
-      透過節點式的方式連接模塊，構建工作流並執行產生圖象，過程有趣且也能透過該過程理解模型運作
-      流程，最後根據主題成功生成芙莉蓮的相關圖像。
+      本次課程介紹了 Stable Diffusion 的運作原理，從文字嵌入、噪聲添加到反向擴散與圖像解碼，讓我對 AI 生圖的流程有了更深刻的理解。透過潛空間壓縮（VAE）的設計，大幅提升了運算效率，令我印象深刻。實作部分學習了如何在本地端透過 ComfyUI 搭配 Checkpoint 與 LoRA 模型生成圖像，也嘗試了以 Google Colab 進行雲端運行。從失敗案例中體悟到提示詞的精確性對生圖品質至關重要，未來將持續精進 Prompt 撰寫技巧。
     </div>
   </div>
 
@@ -212,14 +210,10 @@
       <figure>
         <figcaption>完成芙莉蓮、欣梅爾Checkpoint文生圖</figcaption>
         <a href="https://civitai.com/models/820208/obsession-illustrious-xl">Checkpoint連結</a>
-        <p>1024 * 1280</p>
-        <p>very awa, anime screencap, masterpiece,best quality,1boy, 1girl, 
-          frieren, himmel \(sousou no frieren\), outdoors, upper body, eye contact, light blue hair, 
-          cape, capelet, earrings, dappled sunlight, day, hand on another&#039;s head, kesyeru, sousou no frieren, 
-          &lt;,
+        <p>1344 * 768</p>
+        <p>Frieren and Himmel, 1boy 1girl, anime style, Frieren with silver long hair, purple eyes, pointy elf ears, white mage robe with gold trim, Himmel with short blue hair, blue eyes, hero armor blue and white with golden details, two people facing each other, close up, intimate distance, eye contact, gazing into each other's eyes, soft and emotional expression, gentle smile, warm golden hour lighting, soft bokeh background, meadow with wildflowers, sunlight filtering through, romantic and nostalgic atmosphere, highly detailed illustration, masterpiece, best quality, cel shading, soft shadows, beautifully detailed eyes, shallow depth of field, cinematic portrait composition, detailed fabric and armor texture,
         </p>
-        <p>nsfw,lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits,cropped,worst quality,
-          low quality,normal quality,jpeg artifacts,signature,watermark,username,blurry,artist name,
+        <p>lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, poorly drawn hands, poorly drawn face, mutation, deformed, extra limbs, extra arms, extra legs, malformed limbs, fused fingers, too many fingers, long neck, cross-eyed, mutated hands, polar lowres, bad body, bad proportions, gross proportions, looking away, facing same direction, looking at sky, eyes closed, nsfw, dark background, indoors, 3 people, solo, extra characters, merged faces, conjoined body, duplicate,
         </p>
         <img src="img1.png" width="100%"/>
       </figure>
@@ -236,16 +230,11 @@
         <a href="https://civitai.com/models/1204563?modelVersionId=1356500">LoRA連結1</a>
         <br>
         <a href="https://civitai.com/models/1201355/r754496-or-shiiros-styles-or-niji">LoRA連結2</a>
-        <p>1024 * 1280</p>
-        <p>LoRA1 Strength : 0.5</p>
-        <p>LoRA2 Strength : 0.45</p>
-        <p>r17329_illu, xxx667_illu, very awa, anime screencap, masterpiece,best quality,1boy, 1girl, 
-          frieren, himmel \(sousou no frieren\), outdoors, upper body, eye contact, light blue hair, 
-          cape, capelet, earrings, dappled sunlight, day, hand on another&#039;s head, kesyeru, sousou no frieren, 
-          &lt;lora:r17329_illu-000015:0.45&gt;, &lt;lora:XXX477-000016:0.5&gt;,
+        <p>1344 * 768</p>
+        <p>LoRA1 Strength : 0.9</p>
+        <p>Frieren and Himmel, 1boy 1girl, anime style, Frieren with silver long hair, purple eyes, pointy elf ears, white mage robe with gold trim, Himmel with short blue hair, blue eyes, hero armor blue and white with golden details, two people facing each other, close up, intimate distance, eye contact, gazing into each other's eyes, soft and emotional expression, gentle smile, warm golden hour lighting, soft bokeh background, meadow with wildflowers, sunlight filtering through, romantic and nostalgic atmosphere, highly detailed illustration, masterpiece, best quality, cel shading, soft shadows, beautifully detailed eyes, shallow depth of field, cinematic portrait composition, detailed fabric and armor texture,
         </p>
-        <p>nsfw,lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits,cropped,worst quality,
-          low quality,normal quality,jpeg artifacts,signature,watermark,username,blurry,artist name,
+        <p>lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, poorly drawn hands, poorly drawn face, mutation, deformed, extra limbs, extra arms, extra legs, malformed limbs, fused fingers, too many fingers, long neck, cross-eyed, mutated hands, polar lowres, bad body, bad proportions, gross proportions, looking away, facing same direction, looking at sky, eyes closed, nsfw, dark background, indoors, 3 people, solo, extra characters, merged faces, conjoined body, duplicate,
         </p>
         <img src="img2.png" width="100%"/>
       </figure>
